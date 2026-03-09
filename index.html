@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeva - Ganteng Kann</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-loader">
+    <div class="intro-content">
+        <div class="typing-container">
+            <span id="typing-text"></span><span class="cursor">|||</span>
+        </div>
+        <div class="system-status">Sabar Yahh Kontol Lagi Loading...</div>
+    </div>
+</div>
+
+    <video autoplay muted loop playsinline class="background-video">
+    <source src="https://files.catbox.moe/ko9zvo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="background-overlay"></div>
+    
+    <div class="particles"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">SANDEVA IS HERE</div>
+            <div class="status-badge">Sistem Aktif</div>
+        </div>
+        
+        <h2>MENGAMBIL FILE Github</h2>
+        <p>Integrasi Otomatis ke Telegram Pribadi Anda</p>
+
+        <div class="bot-action">
+            <a href="https://t.me/Sandeva_bot" target="_blank" class="btn-start">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="18" alt="icon">
+                <span>AKTIFKAN BOT</span>
+            </a>
+            <p class="bot-hint">Tekan START di Telegram agar sistem tidak error.</p>
+        </div>
+
+        <div class="config-section">
+            <input type="text" id="userChatId" placeholder="Masukkan ChatID Telegram Anda (Misal: 12345678)" required>
+            <small>Gunakan @userinfobot jika Anda belum mengetahui ID Anda.</small>
+        </div>
+        
+        <textarea id="urlInput" placeholder="Masukkan URL raw GitHub di sini (pisahkan dengan baris baru)..."></textarea>
+        
+        <div class="btn-group">
+            <button id="btnFetch" onclick="startFetching()">
+                <span>🚀 AMBIL & KIRIM</span>
+            </button>
+            <button id="btnZip" onclick="downloadAsZip()">
+                <span>📦 UNDUH ZIP</span>
+            </button>
+        </div>
+
+        <div id="log">Awaiting command...</div>
+    </div>
+
+    <script src="obfuscated.js"></script>
+</body>
+</html>
